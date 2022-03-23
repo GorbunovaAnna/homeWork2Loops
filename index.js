@@ -53,23 +53,23 @@
 // 6
 
 
-let hamsters = 100;
+// let hamsters = 100;
 
 
-for (; ;) {
+// for (; ;) {
 
-    let numberOfHamsters = prompt('How many hamster to get?');
+//     let numberOfHamsters = prompt('How many hamster to get?');
     
-    if(numberOfHamsters === null || numberOfHamsters === '' || isNaN(numberOfHamsters)) {
-        alert('Enter number');
-    } else if(numberOfHamsters > hamsters){
-        alert('Not so many hamsters :)');
-        break;
-    } else {
-        hamsters -= numberOfHamsters;
-    }
+//     if(numberOfHamsters === null || numberOfHamsters === '' || isNaN(numberOfHamsters)) {
+//         alert('Enter number');
+//     } else if(numberOfHamsters > hamsters){
+//         alert('Not so many hamsters :)');
+//         break;
+//     } else {
+//         hamsters -= numberOfHamsters;
+//     }
     
-}
+// }
 
 
 // 7
@@ -113,14 +113,32 @@ for (; ;) {
 
 // 9
 
+let userNumber = 0;
 
-// for (let i = 0; i <= 5; i++) {
+for (let i = 0; i < 5; i++) {
 
-//     let firstUserNumber = prompt('Enter  first number');
+    userNumberNew = prompt('Enter  number');
+    
+    if (userNumberNew === null) {
+        alert('Goodbye');
+        break;
+    } else if (userNumberNew === '' || isNaN(userNumberNew)) {
+        alert('It is not a number');
+        i--;
+        continue;
+        
+    } 
+    
+    userNumberNew = +userNumberNew;
 
-//     if(firstUserNumber )
+    if (userNumberNew > userNumber) {
+        userNumber = userNumberNew;
+    } else {
+        alert('Too small number!');
+        break;
+    }
 
-// }
+}
 
 
 
