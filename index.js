@@ -113,42 +113,53 @@
 
 // 9
 
-let userNumber = 0;
+// let userNumber = 0;
 
-for (let i = 0; i < 5; i++) {
+// for (let i = 0; i < 5; i++) {
 
-    userNumberNew = prompt('Enter  number');
+//     let userNumberNew = prompt('Enter  number');
     
-    if (userNumberNew === null) {
-        alert('Goodbye');
-        break;
-    } else if (userNumberNew === '' || isNaN(userNumberNew)) {
-        alert('It is not a number');
-        i--;
-        continue;
+//     if (userNumberNew === null) {
+//         alert('Goodbye');
+//         break;
+//     } else if (userNumberNew === '' || isNaN(userNumberNew)) {
+//         alert('It is not a number');
+//         i--;
+//         continue;
         
-    } 
+//     } 
     
-    userNumberNew = +userNumberNew;
+//     userNumberNew = +userNumberNew;
 
-    if (userNumberNew > userNumber) {
-        userNumber = userNumberNew;
-    } else {
-        alert('Too small number!');
-        break;
-    }
+//     if (userNumberNew > userNumber) {
+//         userNumber = userNumberNew;
+//     } else {
+//         alert('Too small number!');
+//         break;
+//     }
 
-}
+// }
 
 
 
 
 // 10
 
+let word = 'ика';
+let userNumber = prompt('Enter number');
 
-// let userNumber = prompt('Enter number');
 
-// for () {
+if (userNumber === null) {
+    alert('goodbye!');
+} else if (userNumber === '' || isNaN(userNumber)) {
+    alert('Enter number!');
+} else {
 
-// }
+    for (let i = 1; i <=  userNumber; i++ ) {
+        word = 'за' + word;       
+    }
+    
+    alert(word);
+}
+
 
